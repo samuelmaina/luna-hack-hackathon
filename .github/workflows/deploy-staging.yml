@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name:Stage the app
+name: Stage the app
 
 # Controls when the workflow will run
 on:
@@ -12,4 +12,4 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     runs-on: ubuntu-latest
-    if:contains(github.event.pull_request.labels.*.name, 'stage')
+    if: contains(github.event.pull_request.labels.*.name, "stage")
